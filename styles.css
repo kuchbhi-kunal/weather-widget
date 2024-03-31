@@ -87,7 +87,21 @@ h1 {
     position: absolute;
     z-index: 0;
     margin-top: 5.3rem;
+    animation: slideUp 1.2s forwards;
+    opacity: 0; /* initially hidden */
 }
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 img{
     width: 220px;

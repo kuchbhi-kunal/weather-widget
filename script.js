@@ -23,7 +23,7 @@ function displayWeather(data) {
             <h2 class="cityname">${data.name}, ${data.sys.country}</h2>
             <p class="temp">${Math.round(data.main.temp)}</p>
         </div>
-        <div class="gateway"><img src="https://github.com/kuchbhi-kunal/weather-widget/blob/main/gateway.png?raw=true"/></div>
+        <div class="gateway"><img src="https://github.com/kuchbhi-kunal/weather-widget/blob/main/gateway.png?raw=true" loading="lazy" /></div>
         <div class="tempfooter">
             <p>H : ${highestTemp}°C</p><span>
             <p>L : ${lowestTemp}°C</p>

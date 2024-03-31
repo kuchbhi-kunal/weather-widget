@@ -87,7 +87,7 @@ h1 {
     position: absolute;
     z-index: 0;
     margin-top: 5.3rem;
-    animation: slideUp 1.2s forwards;
+    animation: slideUp 1.5s forwards;
     opacity: 0; /* initially hidden */
 }
 
@@ -98,6 +98,21 @@ h1 {
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.squaricle h2,
+.tempfooter p {
+    opacity: 0; /* initially hidden */
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }

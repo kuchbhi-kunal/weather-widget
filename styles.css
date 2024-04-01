@@ -22,7 +22,7 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 60px;
-    border: 1px solid #b8b8b8;
+    /* border: 2px solid #b8b8b8; */
     background: url('aa9697a3f7a61389675b8dc109518753.gif') no-repeat center center;
     background-size: cover; 
     background-position: center;
@@ -35,6 +35,7 @@ h1 {
     overflow: hidden;
     position: relative;
     margin-top: -3.5rem;
+    box-shadow: inset #5d5d5d 5px 5px 5px -5px; 
 }
 
 .squaricle::after {
@@ -44,7 +45,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 30%;
-    background: linear-gradient(to top, #89919c93, rgba(0,0,0,0));
+    background: linear-gradient(to top, #89919cb9, rgba(0,0,0,0));
     z-index: 0; 
 }
 
@@ -87,7 +88,7 @@ h1 {
     position: absolute;
     z-index: 0;
     margin-top: 5.3rem;
-    animation: slideUp 1.5s forwards;
+    animation: slideUp 2s forwards;
     opacity: 0; /* initially hidden */
 }
 
@@ -105,7 +106,7 @@ h1 {
 .squaricle h2,
 .tempfooter p {
     opacity: 0; /* initially hidden */
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1.5s forwards;
 }
 
 @keyframes fadeIn {

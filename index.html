@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="squaricle" id="weatherInfo">
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <div class="container">
+            <div class="squaricle" id="weatherInfo">
+            </div>
+        </div>
+        <div >
+            <div class="city-buttons" style="display: flex; align-items: center; justify-content: center;  flex-wrap: wrap;">
+                <button onclick="fetchWeatherData('Mumbai')">मुंबई</button>
+                <button onclick="fetchWeatherData('Bengaluru')">ಬೆಂಗಳೂರು</button>
+                <button onclick="fetchWeatherData('Delhi')">दिल्ली</button>
+                <!-- <button onabort="fetchWeatherData('Gandhinagar')">ગાંધીનગર</button> -->
+            </div>
         </div>
     </div>
     <footer>

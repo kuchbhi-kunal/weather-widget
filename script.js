@@ -32,29 +32,35 @@ function displayWeather(data) {
         case 'Delhi':
             imageUrl = 'delhi.png';
             break;
+        case 'Gandhinagar':
+            imageUrl = 'gandhinagar.png';
+            break;
         default:
             imageUrl = 'default.png';
             break;
     }
 
-      // Set background image URL based on the city
-      var bgGifUrl;
-      switch(city) {
-          case 'Mumbai':
-              bgGifUrl = 'perfect.gif';
-              break;
-          case 'Bengaluru':
-              bgGifUrl = 'perfect1.gif';
-              break;
-          case 'Delhi':
-              bgGifUrl = 'perfect2.gif';
-              break;
-          default:
-              bgGifUrl = 'default.gif';
-              break;
-      }
-  
-      weatherInfoDiv.style.background = `url('${bgGifUrl}') no-repeat center center`;
+    // Set background image URL based on the city
+    var bgGifUrl;
+    switch(city) {
+        case 'Mumbai':
+            bgGifUrl = 'perfect.gif';
+            break;
+        case 'Bengaluru':
+            bgGifUrl = 'perfect1.gif';
+            break;
+        case 'Delhi':
+            bgGifUrl = 'perfect2.gif';
+            break;
+        case 'Gandhinagar':
+            bgGifUrl = '8.gif';
+            break;
+        default:
+            bgGifUrl = 'default.gif';
+            break;
+    }
+
+    weatherInfoDiv.style.background = `url('${bgGifUrl}') no-repeat center center`;
 
     weatherInfoDiv.innerHTML = `
         <div>
@@ -68,7 +74,6 @@ function displayWeather(data) {
         </div>
     `;
 }
-
 
 function changeCity() {
     var citySelector = document.getElementById("citySelector");

@@ -69,8 +69,8 @@ function displayWeather(data) {
         </div>
         <div class="gateway"><img src="${imageUrl}" loading="lazy"/></div>
         <div class="tempfooter">
-            <p>H : ${highestTemp}°C</p><span>
-            <p>L : ${lowestTemp}°C</p>
+            <p>H:${highestTemp}°C</p><span>
+            <p>L:${lowestTemp}°C</p>
         </div>
     `;
 }
